@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp" />
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="129dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="460dp"
+            android:backgroundTint="#E3CC39"
+            android:text="@string/get_date" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9C27B0"
+            android:onClick="AddCalendarEvent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="525dp"
+            android:text="@string/add_calendar_event"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="247dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="405dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</FrameLayout>
