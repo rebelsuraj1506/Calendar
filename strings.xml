@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CALENDAR</string>
+    <string name="submit">SUBMIT</string>
+    <string name="select_a_date">Select A Date</string>
+    <string name="get_date">Get Date</string>
+    <string name="add_calendar_event">Add Calendar Event</string>
+    <string name="calendar_event_in_android">Calendar Event In Android</string>
+</resources>
